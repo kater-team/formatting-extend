@@ -1,0 +1,38 @@
+{
+  "name": "kater/formatting-extend",
+  "description": "Kater 基于 fof/formatting 增加自定义拓展",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^1.4",
+    "fof/formatting": "^1.0"
+  },
+  "authors": [
+    {
+      "name": "HHY",
+      "email": "1016823618@qq.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Kater\\FormattingExtend\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "K Foramtting",
+      "icon": {
+        "name": "",
+        "backgroundColor": "",
+        "color": ""
+      }
+    },
+    "flagrow": {
+      "discuss": ""
+    }
+  }
+}
