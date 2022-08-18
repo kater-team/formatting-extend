@@ -60,6 +60,20 @@ return [
                             ]
                         ]
                     );
+                    $configurator->MediaEmbed->add(
+                        'youtube2',
+                        [
+                            'host'    => 'www.youtube.com',
+                            'extract' => [
+                                '!youtube\\.com/embed/(?\'id\'[-\\w]+)!',
+                            ],
+                            'iframe'  => [
+                                'width'  => 760,
+                                'height' => 450,
+                                'src'    => 'https://www.youtube.com/embed/{@id}'
+                            ]
+                        ]
+                    );
                     (new MediaPack())->configure($configurator);
                 } else {
                     $configurator->$plugin;
